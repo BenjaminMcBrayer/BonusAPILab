@@ -3,22 +3,20 @@ package com.bonusapilab.BonusAPILab.entity;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Fact {
+public class FactType {
 
 	private String text;
-	private String year;
 	private String number;
 	private String found;
 	private String type;
 
-	public Fact() {
+	public FactType() {
 
 	}
 
-	public Fact(String text, String year, String number, String found, String type) {
+	public FactType(String text, String number, String found, String type) {
 		super();
 		this.text = text;
-		this.year = year;
 		this.number = number;
 		this.found = found;
 		this.type = type;
@@ -30,14 +28,6 @@ public class Fact {
 
 	public void setText(String text) {
 		this.text = text;
-	}
-
-	public String getYear() {
-		return year;
-	}
-
-	public void setYear(String year) {
-		this.year = year;
 	}
 
 	public String getNumber() {
@@ -66,8 +56,7 @@ public class Fact {
 
 	@Override
 	public String toString() {
-		return "Fact [text=" + text + ", year=" + year + ", number=" + number + ", found=" + found + ", type=" + type
-				+ "]";
+		return "FactType [text=" + text + ", number=" + number + ", found=" + found + ", type=" + type + "]";
 	}
 
 }
