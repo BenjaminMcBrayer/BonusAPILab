@@ -10,6 +10,6 @@
 <body>
 <h1>Fact Display</h1><br><br>
 
-The fact for ${fact.day } ${fact.month } is ${fact.fragment }
+${fact.text }
 </body>
 </html>
